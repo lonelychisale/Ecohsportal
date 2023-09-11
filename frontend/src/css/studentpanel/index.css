@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+.studentpanel{
+background-color: white;
+margin: 0;
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+height: 100vh;
+}
+.studentpaneldivsflex{
+    display: flex;
+    width: 100vw;
+    height: 150vh;
+    
+}
+.studentpaneldivsflex .leftdiv{
+    background-color:  rgb(5, 5, 67);
+    width: 15.7vw;
+    box-shadow: 0px 0px 10px 0px rgb(3, 3, 34);
+    color: white;
+    position: fixed;
+    height: 100vh;
+}
+.studentpaneldivsflex .leftdiv .header{
+    text-transform: capitalize;
+    margin-left: 0px;
+    opacity: 0.8;
+    width: inherit;
+    text-align: center;
+
+}
+.studentpaneldivsflex .leftdiv .header span{
+    font-size: 100px;
+   
+   
+}
+.studentpaneldivsflex .leftdiv .header  h1{
+    margin-top: -20px;
+    font-size: 20px;
+    background-color:wheat;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+.studentpaneldivsflex .leftdiv .menu{
+    margin-top: 10px;
+}
+.studentpaneldivsflex .leftdiv .menu div ul li{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    height: 20px;
+    margin-left: -28px; 
+    text-transform: capitalize;
+    cursor: pointer;
+    
+}
+.dropdownmenu li{
+    padding: 10px;
+}
+.studentpaneldivsflex .leftdiv .menu div ul li span{
+    margin-right: 5px;
+    
+}
+.studentpaneldivsflex .leftdiv .menu div li:nth-child(1) span{
+    margin-top: 5px; 
+}
+.studentpaneldivsflex .leftdiv .menu div li:nth-child(1).dashboardlist{
+    border-right: 1px solid rgb(3, 3, 34);
+  
+}
+.rightdiv{
+    width: calc(100vw - 15.7vw);
+    margin-left: 15.7vw;
+    background-color: white;
+}
+.rightdiv .rightdivheader{
+    background-color: white;
+    height: 13vh;
+    width: inherit;
+    box-shadow: 0px 0px 10px 0px rgb(3, 3, 34);
+    position: fixed;
+    z-index: 900;
+}
+.rightdiv .rightdivheader .flexingrightdivheader{
+    display: flex;
+}
+.rightdiv .rightdivheader .flexingrightdivheader .menucontroller{
+margin-left: 30px;
+margin-top: 15px !important;
+font-size: 35px;
+color:rgb(5, 5, 67);
+}
+.rightdiv .rightdivheader .flexingrightdivheader .rightdivheadertopic h1{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    text-transform: capitalize;
+    color:rgb(5, 5, 67);;
+    text-shadow: 1px 3px wheat;
+    
+}
+
+.rightdiv .content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    margin-top: 13vh;
+}
+.rightdiv .content .justifycontent{
+    width: 77vw;
+    margin-left: -1.5vw;
+}
+.rightdiv .content .justifycontent .rowone{
+    display: flex;
+}
+.rightdiv .content .justifycontent .rowone .userinfo .card{
+    width: 500px;
+    border-radius: unset;
+    font-family: serif;
+    height: auto;
+    border-bottom: 3px solid wheat;
+}
+.rightdiv .content .justifycontent .rowone .userinfo .card:hover{
+    box-shadow: 0px 0px 0px 0px silver;
+}
+.rightdiv .content .justifycontent .rowone .userinfo .card .card-header h1{
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    text-align: left;
+    font-size: 25px;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 0px 0px silver;
+    background-color: rgb(5, 5, 67);
+    color: white;
+}
+.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table{
+    width: 100%;
+    border: none;
+    padding: 10px;
+
+}
+.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table tr td{
+    border: none;
+}
+.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table tr td:nth-child(1){
+    font-weight: bold;
+}
+
+.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table tr td:nth-child(2){
+    border-bottom: 1px solid silver;
+}
+
+.rightdiv .content .justifycontent .rowone .regstatus .card{
+    margin-left: 50px;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: unset;
+    border-top: 5px solid wheat;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-family: serif;
+    background-color: whitesmoke;
+}
+.rightdiv .content .justifycontent .rowone .regstatus .card:hover{
+    box-shadow: 0px 0px 0px 0px silver;
+}
+iframe{
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.iframe.registration iframe{
+    height: 1800px;
+    display: none;
+}
+.results .card{
+    border-radius: 0px;
+    height: auto;
+    border-bottom: 3px solid wheat;
+    display: none;
+
+}
+.results .card:hover{
+    box-shadow: 0px 0px 0px silver;
+}
+.results .card .card-header h1{
+    margin: 0;
+    background-color:  rgb(5, 5, 67);;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 25px;
+}
+.results .card .card-body{
+    height: 100px;
+}
+.results .card .card-body .link {
+    text-align: center;
+    margin-top: 70px;
+    color: wheat;
+    text-decoration: underline;
+   
+ }
+.results .card .card-body iframe{
+    display: none;
+
+}
+
+/*media queries*/
+@media screen and (max-width:1250px) {
+    .rightdiv .content .justifycontent .rowone .userinfo .card{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .rightdiv .content .justifycontent .rowone .regstatus .card{
+        width: 300px;
+    }
+    
+}
+@media screen and (max-width:950px) {
+    .rightdiv .content .justifycontent .rowone{
+        display: block;
+    }
+    .rightdiv .content .justifycontent .rowone .userinfo .card{
+        width: inherit;
+    }
+    .rightdiv .content .justifycontent .rowone .regstatus .card{
+        margin-left: 0px;
+        width: inherit;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    .studentpaneldivsflex .leftdiv{
+        display: none;
+    }
+    .rightdiv{
+        width: calc(100vw);
+        margin-left: 0vw;
+        background-color: white;
+    }
+    .results .card{
+        display: block;
+    }
+}
