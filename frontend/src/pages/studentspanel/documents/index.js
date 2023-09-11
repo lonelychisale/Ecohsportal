@@ -21,14 +21,11 @@ function Documents(){
                 <div>
                     <div className="card">
                       <div className="header">
-                        <h1>importance of agricure <span>posted on</span><i>10 october 2018</i></h1>
+                        <h2>importance of agricure <span>posted on  </span><i>10 october 2018</i></h2>
                       </div>
                       <div className="body">
                         <p>hgtjdjhfdjhjerjeknffhoeujroejorjewioioeieiwjieriowjieiiewrioeruioewruioewuieouioeuieuiueiieieriurioewriouewiuiofdjhfuaohfijdhfioauoi
                             ufjdshfuoahrfourfiowehbfgvhjrfiluerybfhzuoxeyhosadyngsgfc</p>
-                      </div>
-                      <div className="footer">
-                        <i>hjhjhu</i>
                       </div>
                     </div>
                  </div>

@@ -1,0 +1,38 @@
+.help h1{
+    background-color: rgb(5, 5, 67);
+    text-transform: capitalize;
+    color: white;
+    padding-left: 10px;
+    font-family: serif;
+}
+.help .form .formgroup{
+    margin-top: 30px;
+}
+.help .form .formgroup:nth-child(1){
+    margin-top: 60px;
+}
+.help .form .formgroup label{
+    position: absolute;
+    margin-top: -23px;
+    text-transform: capitalize;
+    font-family: serif;
+}
+.help .form .formgroup input,textarea{
+    width: 95%;
+    height: 30px;
+    border: none;
+    border: 1px solid silver;
+    border-radius: 5px;
+    outline: unset;
+    color: gray;
+}
+.help .form .formgroup textarea{
+   height: auto;
+}
+.help .form .formgroup input[type='submit']{
+    width: 96%;
+    background-color: wheat;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

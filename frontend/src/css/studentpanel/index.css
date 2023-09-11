@@ -218,6 +218,32 @@ iframe{
     display: none;
 
 }
+.iframe.accomodation.book{
+    display: none !important;
+} 
+.iframe.accomodation.book iframe{
+    height: 500px;
+}
+.iframe.accomodation.allocation{
+    display: none;
+}
+
+.documents iframe{
+    height: 1000px;
+    display: none;
+}
+
+.iframe.events iframe{
+    height: 700px;
+    display: none;
+}
+.iframe.help.contact iframe{
+    height: 500px;
+    display: none;
+}
+.alerts{
+    display: none;
+}
 
 /*media queries*/
 @media screen and (max-width:1250px) {
@@ -258,4 +284,12 @@ iframe{
     .results .card{
         display: block;
     }
+    .iframe.accomodation.allocation{
+        display: block;
+        margin-top: 50px;
+    }
+    .iframe.accomodation.allocation iframe{
+        height: 180px;
+    }
+    
 }

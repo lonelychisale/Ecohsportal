@@ -1,5 +1,6 @@
 import  '../../css/studentpanel/index.css'
 import { Link } from 'react-router-dom';
+import SecurityAlert from './componets/securityalert';
 import React, { useState } from 'react';
 import {FaKey,FaLock,FaAlignJustify, FaTachometerAlt,FaUserCircle,FaPenSquare,FaRegCalendarAlt,FaRegQuestionCircle,FaRegFolder,FaRegFileAlt,FaWarehouse,FaCoins,FaCaretDown,FaBell, FaAdjust} from 'react-icons/fa';
 import Logo from '../../images/logo.jpg'
@@ -209,16 +210,24 @@ function Studentdashboard(){
               </div>
 
             </div>
+
+            <div className='alerts'>
+              <div className='security'>
+                <SecurityAlert></SecurityAlert>
+              </div>
             
+            </div>
+           
           </div>
+         
           
          </div>
-        
          
         </div>
         
        
       </div>
+     
      
 
     </div>

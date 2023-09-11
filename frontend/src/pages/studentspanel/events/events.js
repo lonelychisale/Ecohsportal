@@ -1,5 +1,6 @@
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import '../../../css/studentpanel/events/index.css'
 import moment from 'moment';
 
 const localizer = momentLocalizer(moment);
@@ -21,8 +22,8 @@ const events = [
 
 function Events(){
     return(
-        <div  style={{ backgroundColor: 'whitesmoke', width: '100%', height: '100%', position: 'absolute', margin: '0' }}>
-            <h1>recents events</h1>
+        <div className='events'>
+            <h1>calendar of events</h1>
       <div style={{ height: '500px' }}>
         <Calendar
           localizer={localizer}
