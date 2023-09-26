@@ -1,295 +1,185 @@
-body{
-    margin: 0;
-    overflow-x: hidden;
-    
-}
 .studentpanel{
-background-color: white;
-margin: 0;
-position: absolute;
-top: 0;
-right: 0;
-left: 0;
-bottom: 0;
-height: 100vh;
-}
-.studentpaneldivsflex{
-    display: flex;
-    width: 100vw;
-    height: 150vh;
-    
-}
-.studentpaneldivsflex .leftdiv{
-    background-color:  rgb(5, 5, 67);
-    width: 15.7vw;
-    box-shadow: 0px 0px 10px 0px rgb(3, 3, 34);
-    color: white;
-    position: fixed;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
     height: 100vh;
-}
-.studentpaneldivsflex .leftdiv .header{
-    text-transform: capitalize;
-    margin-left: 0px;
-    opacity: 0.8;
-    width: inherit;
-    text-align: center;
+    height: 200vh;
+    overflow-x: hidden;
 
 }
-.studentpaneldivsflex .leftdiv .header span{
-    font-size: 100px;
-   
-   
-}
-.studentpaneldivsflex .leftdiv .header  h1{
-    margin-top: -20px;
-    font-size: 20px;
-    background-color:wheat;
-    color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
-
-}
-.studentpaneldivsflex .leftdiv .menu{
-    margin-top: 10px;
-}
-.studentpaneldivsflex .leftdiv .menu div ul li{
-    list-style: none;
-    padding: 10px;
-    width: 100%;
-    height: 20px;
-    margin-left: -28px; 
-    text-transform: capitalize;
-    cursor: pointer;
-    
-}
-.dropdownmenu li{
-    padding: 10px;
-}
-.studentpaneldivsflex .leftdiv .menu div ul li span{
-    margin-right: 5px;
-    
-}
-.studentpaneldivsflex .leftdiv .menu div li:nth-child(1) span{
-    margin-top: 5px; 
-}
-.studentpaneldivsflex .leftdiv .menu div li:nth-child(1).dashboardlist{
-    border-right: 1px solid rgb(3, 3, 34);
-  
-}
-.rightdiv{
-    width: calc(100vw - 15.7vw);
-    margin-left: 15.7vw;
-    background-color: white;
-}
-.rightdiv .rightdivheader{
-    background-color: white;
-    height: 13vh;
-    width: inherit;
-    box-shadow: 0px 0px 10px 0px rgb(3, 3, 34);
+.studentpanel .header{
+    background-color: #053d67;
+    margin: 0;
+    top: 0;
     position: fixed;
+    left: 0;
+    right: 0;
+    padding: 2px;
+    height: 15vh;
     z-index: 900;
 }
-.rightdiv .rightdivheader .flexingrightdivheader{
+.studentpanel .header .headercontents{
     display: flex;
+    color: white;
+    vertical-align: middle;
 }
-.rightdiv .rightdivheader .flexingrightdivheader .menucontroller{
-margin-left: 30px;
-margin-top: 15px !important;
-font-size: 35px;
-color:rgb(5, 5, 67);
+.studentpanel .header .headercontents .title{
+    margin-left: 20px;
 }
-.rightdiv .rightdivheader .flexingrightdivheader .rightdivheadertopic h1{
+.studentpanel .header .headercontents .searchform{
+    margin-top: 25px;
+    margin-left: 80px;
+}
+.studentpanel .header .headercontents .searchform form .formgroup input{
+    width: 300px;
+    height: 25px;
+}
+.userprofile{
     position: absolute;
     right: 0;
-    margin-right: 30px;
-    text-transform: capitalize;
-    color:rgb(5, 5, 67);;
-    text-shadow: 1px 3px wheat;
+    margin-right: 20px;
+    display: flex;
+}
+.userprofile div{
+    margin-left: 10px;
     
 }
-
-.rightdiv .content{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: inherit;
-    margin-top: 13vh;
-}
-.rightdiv .content .justifycontent{
-    width: 77vw;
-    margin-left: -1.5vw;
-}
-.rightdiv .content .justifycontent .rowone{
+.info{
     display: flex;
 }
-.rightdiv .content .justifycontent .rowone .userinfo .card{
-    width: 500px;
-    border-radius: unset;
-    font-family: serif;
-    height: auto;
-    border-bottom: 3px solid wheat;
+.notification{
+    margin-top: 30px;
+    font-size: 20px;
 }
-.rightdiv .content .justifycontent .rowone .userinfo .card:hover{
-    box-shadow: 0px 0px 0px 0px silver;
+.info img{
+    height: 50px;
+    width: 60px;
+    margin-top: 15px;
+    border-radius: 50%;
 }
-.rightdiv .content .justifycontent .rowone .userinfo .card .card-header h1{
-    margin: 0;
-    padding: 10px;
-    border-bottom: 1px solid silver;
-    text-align: left;
-    font-size: 25px;
-    text-transform: capitalize;
-    box-shadow: 0px 0px 0px 0px silver;
-    background-color: rgb(5, 5, 67);
+.content{
+    margin-top: 15vh;
+    display: flex;
+}
+.content .menu{
+    position: fixed;
+    background-color: #075794;
+    width: 15vw;
+    height: 100vh;
     color: white;
-}
-.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table{
-    width: 100%;
-    border: none;
-    padding: 10px;
-
-}
-.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table tr td{
-    border: none;
-}
-.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table tr td:nth-child(1){
-    font-weight: bold;
-}
-
-.rightdiv .content .justifycontent .rowone .userinfo .card .card-body table tr td:nth-child(2){
-    border-bottom: 1px solid silver;
-}
-
-.rightdiv .content .justifycontent .rowone .regstatus .card{
-    margin-left: 50px;
-    width: 400px;
-    height: auto;
-    padding: 10px;
-    border-radius: unset;
-    border-top: 5px solid wheat;
-    text-align: center;
-    border-radius: 5px;
-    text-transform: capitalize;
-    font-family: serif;
-    background-color: whitesmoke;
-}
-.rightdiv .content .justifycontent .rowone .regstatus .card:hover{
-    box-shadow: 0px 0px 0px 0px silver;
-}
-iframe{
-    width: 100%;
-    height: auto;
-    border: none;
-}
-
-.iframe.registration iframe{
-    height: 1800px;
-    display: none;
-}
-.results .card{
-    border-radius: 0px;
-    height: auto;
-    border-bottom: 3px solid wheat;
-    display: none;
-
-}
-.results .card:hover{
-    box-shadow: 0px 0px 0px silver;
-}
-.results .card .card-header h1{
-    margin: 0;
-    background-color:  rgb(5, 5, 67);;
-    color: white;
-    text-transform: capitalize;
-    padding: 10px;
-    font-size: 25px;
-}
-.results .card .card-body{
-    height: 100px;
-}
-.results .card .card-body .link {
-    text-align: center;
-    margin-top: 70px;
-    color: wheat;
-    text-decoration: underline;
    
- }
-.results .card .card-body iframe{
-    display: none;
-
 }
-.iframe.accomodation.book{
-    display: none !important;
-} 
-.iframe.accomodation.book iframe{
-    height: 500px;
+.content .menu ul{
+    padding: 0;
 }
-.iframe.accomodation.allocation{
-    display: none;
+.content .menu ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+    padding: 10px;
+    margin-left: 2px;
 }
-
-.documents iframe{
-    height: 1000px;
-    display: none;
+.content .menu ul li:first-child{
+    background: rgb(191, 188, 188);
+    border-left: 3px solid white;  
 }
-
-.iframe.events iframe{
-    height: 700px;
-    display: none;
+.content .menu ul li:hover{
+    background: rgb(191, 188, 188);
+    border-left: 3px solid white;
 }
-.iframe.help.contact iframe{
-    height: 500px;
-    display: none;
+.maincontainer{
+    margin-left: 15vw;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: calc(100vw - 15vw);
 }
-.alerts{
-    display: none;
+.maincontainercontent{
+    position: relative;
+    width: 90%;
+    margin-top: 80px;
 }
-
-/*media queries*/
-@media screen and (max-width:1250px) {
-    .rightdiv .content .justifycontent .rowone .userinfo .card{
-        width: 400px;
-    }
+.maincontainercontent .upperdivs{
+    display: flex;
 }
-
-@media screen and (max-width:1100px) {
-    .rightdiv .content .justifycontent .rowone .regstatus .card{
-        width: 300px;
-    }
-    
+.maincontainercontent .upperdivs div{
+    width: 100%;
+    margin-left: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+    text-transform: capitalize;
 }
-@media screen and (max-width:950px) {
-    .rightdiv .content .justifycontent .rowone{
-        display: block;
-    }
-    .rightdiv .content .justifycontent .rowone .userinfo .card{
-        width: inherit;
-    }
-    .rightdiv .content .justifycontent .rowone .regstatus .card{
-        margin-left: 0px;
-        width: inherit;
-    }
-    
+.maincontainercontent .upperdivs div i{
+    color: #075794;
+}
+.maincontainercontent .upperdivs div:first-child{
+    margin-left: 0;
+}
+.middiv{
+    display: flex;
+    margin-top: 10px;
 }
 
-@media screen and (max-width:800px){
-    .studentpaneldivsflex .leftdiv{
-        display: none;
-    }
-    .rightdiv{
-        width: calc(100vw);
-        margin-left: 0vw;
-        background-color: white;
-    }
-    .results .card{
-        display: block;
-    }
-    .iframe.accomodation.allocation{
-        display: block;
-        margin-top: 50px;
-    }
-    .iframe.accomodation.allocation iframe{
-        height: 180px;
-    }
-    
+.userprofileinfo{
+    margin-top: 30px;
+    width: 40%;
+}
+
+.userprofileinfo table{
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+   
+}
+.userprofileinfo table th, .userprofileinfo table td{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    color: gray;
+}
+.middiv .results{
+    width: 55%;
+    margin-left: 5%;
+    margin-top: -20px;
+}
+.middiv .results .card{
+    height: auto;
+    padding: 10px;
+    color: gray;
+}
+.middiv .results .card h1{
+    border-bottom: 1px solid gray;
+    margin: 0;
+    font-size: 25px;
+}
+.middiv .results .card .cardbody{
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.middiv .results .card .cardbody i{
+    color: #075794;
+}
+.accomationallocation{
+    margin-top: 40px;
+}
+.accomationallocation table{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+    color: gray;
+}
+.accomationallocation table th,.accomationallocation table td{
+   border: 0;
+   border: 1px solid gray;
 }
